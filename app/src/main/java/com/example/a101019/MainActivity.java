@@ -1,7 +1,6 @@
 package com.example.a101019;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
