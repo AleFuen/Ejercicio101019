@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Mapa = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng arica = new LatLng(-34, 151);
+        LatLng arica = new LatLng(-18, 70);
         Mapa.addMarker(new MarkerOptions().position(arica).title("Marcador en Arica"));
         Mapa.moveCamera(CameraUpdateFactory.newLatLng(arica));
     }
