@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         Mapa = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng arica = new LatLng(-18, 70);
+        //Añadir marcador en Arica y mover la cámara.
+        LatLng arica = new LatLng(-18.4745998, -70.2979202);
         Mapa.addMarker(new MarkerOptions().position(arica).title("Marcador en Arica"));
         Mapa.moveCamera(CameraUpdateFactory.newLatLng(arica));
     }
