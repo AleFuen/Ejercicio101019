@@ -15,7 +15,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private GoogleMap Mapa
+    private GoogleMap Mapa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
+
     public void onMapReady(GoogleMap googleMap) {
         Mapa = googleMap;
 
