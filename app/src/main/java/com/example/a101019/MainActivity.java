@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Mapa.moveCamera(CameraUpdateFactory.newLatLng(elsalvador));
         CameraPosition cameraPosition = CameraPosition.builder()
                 .target(elsalvador)
-                .zoom(10)
+                .zoom(2)
                 .build();
 
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
