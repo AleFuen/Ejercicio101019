@@ -8,6 +8,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng elsalvador = new LatLng(-26.25, -69.616667);
         Mapa.addMarker(new MarkerOptions().position(elsalvador).title("Marcador en El Salvador"));
         Mapa.moveCamera(CameraUpdateFactory.newLatLng(elsalvador));
+        CameraPosition cameraPosition = CameraPosition.builder()
+                .target(elsalvador)
+                .zoom(10)
+                .build();
+
+        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 
     @Override
